@@ -31,7 +31,7 @@
 
         <b><u>Tags and Elements:</u></b>
 
-        <p>Computers interpret language literally, so it makes sense that computer programming languages are designed to limit ambiguity. HTML documents are made up of HTML elements, and tags typically bookmark the content of an element with an opening and closing tag. These tags help computers interpret the HTML you've written with more specificity, giving your webpage more structure, and design. Tags can be used to <b>bold</b>, <em>italicize</em>, or <u>underline</u> words of text, for example. For an HTML Element Reference table in which HTML tags are ordered alphabetically, contain a description, and a note as to if that tag is supported by the current version of HTML, HTML 5, click <a href="https://www.w3schools.com/TAgs/">here</a></p>
+        <p>Computers interpret language literally, so it makes sense that computer programming languages are designed to limit ambiguity. HTML documents are made up of HTML elements, and tags typically bookmark the content of an element with an opening and closing tag. These tags help computers interpret the HTML you've written with more specificity, giving your webpage more structure, and design. Tags can be used to <b>bold</b>, <em>italicize</em>, or <u>underline</u> words of text, for example. For an HTML Element Reference table in which HTML tags are ordered alphabetically, contain a description, and a note as to if that tag is supported by the current version of HTML, HTML 5, click <a href="https://www.w3schools.com/TAgs/">here</a>.</p>
 
         <p>Additonally, some elements accept values called attributes in their opening tags that provide additional information to the browser, such as the anchor tag attribute that was drawn up by, and explained, by Scott. I found this example very teachable because this anchor tag creates the hyperlink, or link, demonstrating the power of the connectivity of the web with such a simple line of code:<br><br>
         <img class="linkpower" src="images/attr.jpg" height="50%" width="50%"></p>
@@ -58,20 +58,71 @@
 
         <b><u>Developer Tools:</u></b>
 
-        <p>Developer Tools is an incredible tool for designers. To use Developer Tools for your webpage, simply open your file in Chrome, right click, and select <b>Inspect</b> found at the bottom of the pop-up menu. Once developer tools opened, the dockside was displayed at the bottom of my window:<br><br>
+        <p>Developer Tools is an incredible tool for designers that shows designers the structure of a webpage, as the browswer interprets it. To use Developer Tools for your webpage, simply open your file in Chrome, right click on your webpage, and select <b>Inspect</b> found at the bottom of the pop-up menu. Once developer tools opened, the dockside was displayed at the bottom of my window:<br><br>
         <img class="dockbottom" src="images/devtools1.jpg"></p>
 
         <p>However, I'd suggest changing your view so that your dock is placed to the right. In the bottom-right corner in the above screenshot, you can see how to change the display location of your dock, resulting in:<br><br><img class="dockright" src="images/devtools2.jpg"></p>
 
         </p>Doing so made it easier for me to see my code in the browser (left side), while simultaneously viewing the elements tab, in which your coding tree is displayed (center), along with the styles column (right side).</p>
 
-        <p>Furthermore, while in Developer Tools, you can also select the type of media screen you'd like to test your code in, including Galaxy S5, Nexux 5X, Nexus 6P, iPhone 5, iPhone 6, iPhone 6 Plus, iPad, and the iPadPro, as is displayed in the drop down menu in the top-left corner in the above screenshot.</p>
-
         <p>Having the dock on the right also more readily allows you to inspect the margin, border, or padding surrounding elements. You can play around with these numbers in DevTools and immediately see the impact they make on your webpage. You can also add various styling components under element.syle {--insert styling--} to immediately see the impact of say, changing a font color or size, might have on your webpage without making changes to your existing code. But, if you like what changes you see, you can then incorporate that styling into your CSS file.</p>
 
-        <p><b><u>About Me:</u></b><br><br><img class="headshot" src="images/anthony.jpg"></p>
+        <p>Lastly, while in Developer Tools, you can also select the type of media screen you'd like to test your code in, including Galaxy S5, Nexux 5X, Nexus 6P, iPhone 5, iPhone 6, iPhone 6 Plus, iPad, and the iPadPro, as is displayed in the drop down menu in the top-left corner in the above screenshot. Be sure to use this feature when you're designing your own sites!</p>
 
-        <p>I graduated from college almost 6 years ago now with a Bachelor of the Arts, in Theatre. After graduation I worked in regional theatre production, until I left the arts to work full time in the restaurant service industry. After a few years, however, I've realized that waiting tables won't get me where I want to be, thus I've begun my adventure into the field of coding and programming. Udacity was recommened to me by a personal friend, Michael Lucero, who is currently enrolled in your Front-End Nanodegree.</p><br><br>
+        <b><u>Boxes Everywhere, Grids, and Rules:</u></b>
+
+        <p>Almost everything on a webpage is built on a grid system using boxes in the shapes of either squares or rectangles, which is an important concept to understand as a Front-End Designer because the quicker you learn this, the easier your life will be. </p>
+
+        <b><u>Adding CSS Style and HTML Structure:</b></u>
+        <p>One of the most important rules of computer programming: Don't repeat yourself. Avoiding repetition is essential in all areas of programming. Enter CSS or Cascading Style Sheets, which does imply the use of several CSS files that will be referenced to by HTML, all of which will impact the final, visable style of your webpage. Cascading really means the employment of the most specific rule that can be applied. Jessica described it as: "You keep going down, and down into the rule, until you find the one that best describes the elements."</p>
+
+        <!--Study the following, and put in your own terms:
+        Search and Replace: You You can also think about CSS as a search and replace tool: you identify a class or a tag of the element you want to find (or match, in CSS terminology), and then what you want to do with it, or what property values to replace with different ones.<br>
+
+        Order Matters
+        It also matters where you define the rules and in what order they are applied. Styles can be defined in different places and are applied in the following order, with definitions further down the list overwriting previous definitions:<br>
+
+        <li>the default style of a browser (different browsers have slightly different styles)</li>
+        <li>stylesheet in a separate file (this is what you will be mostly using)</li>
+        <li>stylesheet inside HTML (this can be done for small projects but is not ideal)</li>
+        <li>inline style in an element (this can also be done but should be avoided)</li>
+
+        Specifics Matter
+        <p>"Cascading" means that rules are applied not only to the elements they directly match, but also to all of those elements' child elements. However, if a child element has multiple, overlapping rules defined for it, the more specific rule takes effect.
+
+        CSS Vocabulary, Key Terms:
+        <u>CSS:</u> Cascading Style Sheets.
+
+        Style: This word can refer to many things and so it can be confusing. It can refer to:
+
+        a)The HTML element. For example: <style>div {color:blue}</style>
+        b)The HTML attribute. For example: <div style="color : blue">this text would be blue</div>
+        c)The general look of a web page. For example: "I like that site's style."
+        d)A verb. For example: "I'm making progress on my page. The structure is all done but now I have to style it."
+
+        Rule: a line of CSS code describing the value that a certain attribute should take.
+
+        Property: The property you want to change.
+
+        Value: The value that you want to assign to the attribute.
+
+        Selector: The name that you use to in order to target the elements that are assigned to a class or id attribute in the HTML.
+
+        Class: A class refers to a group of elements that can be styled together. Class names should not contain periods or any other punctuation marks such as class="1.1"
+
+        ID: ID's are unique identifiers that uniquely identifies an element in HTML.</p>-->
+
+        <p>The best tips and tricks on CSS selectors can be found <a href="https://css-tricks.com/how-css-selectors-work/">here</a>! I'd recommend adding this page to your bookmarks for future reference and study. Furthermore, click <a href="https://css-tricks.com/almanac/">here</a> for <b>an entire Almanac that covers all CSS selectors</b>, as well as their properties. Mozilla Developer Network also has a great page full of wisdom regarding <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS reference</a>.</p>
+
+        <p>Lastly, because CSS rules differ sometimes between browsers, there are efforts to promote consistency in styles across browsers. One popular solution to this issue is using what is referred to as a CSS reset such as Normalize.css, a project by Nicholas Gallaher and Jonathan Neal, with their <a href="http://necolas.github.io/normalize.css/">source code</a> available on Github.</p>
+
+        <h2>About Me:</h2>
+        <img class="headshot" src="images/anthony.jpg">
+
+        <p>I graduated from college almost 6 years ago now with a Bachelor of the Arts, in Theatre. After graduation I worked in regional theatre production, until I left the arts to work full time in the restaurant service industry. After a few years, however, I've realized that waiting tables won't get me where I want to be, thus I've begun my adventure into the field of coding and programming. Udacity was recommened to me by a personal friend, Michael Lucero, who is currently enrolled in your Front-End Nanodegree.</p>
+
+        <b><u>Exciting Tech News Artciles Re: Tech in Indianapolis:</u></b>
+        <p><a href="http://usbusiness2020.economist.com/article/a-tech-scene-grows-in-indianapolis/">Tech Scene Grows</a>, from <em>The Economist</em>, published December 13, 2016.</p>
     <!--</div> Finish adding notes first before going any further with styling-->
 </body>
 </html>
