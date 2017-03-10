@@ -4,20 +4,39 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>UIPND Lessons Reflections</title>
+    <title>MyUIPNDE</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <!--<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Merienda:700" rel="stylesheet">
 </head>
 <body>
     <!--<div class="container"> I want to style my webpage now,
     but I should focus on adding all my notes, get all my content
     first, and then style afterwards. Deadline to complete notes: 2pm.-->
-    <div id="container">
-        <div id="header">
-            <h1>Important Concepts</h1></div>
+    <div class="navbar">
+        <h2> Sidebar Menu </h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Indy Tech News</a>
+            <a href="#">Concepts, Stage 0</a>
+            <a href="#">Concepts, Stage 1</a>
+            <a href="#">Helpful Resources</a>
+        </nav>
+    </div>
 
-        <div id="stage0"
-            <h2>Lessons from Stage 0: The Basics of the Web and HTML</h2>
+    <div class="container">
+        <div class="header">
+            <h1>Anthony L Morton</h1>
+            <h4>Future Front End Developer</h4>
+            <a class="menu-toggle" href="#">Show/Hide Menu</a>
+            <img class="fwheel" src="images/fwheel.jpg">
+            <p id="quote">"Illuminate the night. Let your light shine bright"</p>
+        </div>
+
+        <hr id="linebreak" width="80%" align="center">
+
+        <div id="stage0">
+            <h2>Concepts, Stage 0: The Basics of the Web and HTML</h2>
 
             <b><u>The World Wide Web, How it Works, and HTML:</u></b>
 
@@ -36,7 +55,7 @@
             <p>Computers interpret language literally, so it makes sense that computer programming languages are designed to limit ambiguity. HTML documents are made up of HTML elements, and tags typically bookmark the content of an element with an opening and closing tag. These tags help computers interpret the HTML you've written with more specificity, giving your webpage more structure, and design. Tags can be used to <b>bold</b>, <em>italicize</em>, or <u>underline</u> words of text, for example. For an HTML Element Reference table in which HTML tags are ordered alphabetically, contain a description, and a note as to if that tag is supported by the current version of HTML, HTML 5, click <a href="https://www.w3schools.com/TAgs/">here</a>.</p>
 
             <p>Additonally, some elements accept values called attributes in their opening tags that provide additional information to the browser, such as the anchor tag attribute that was drawn up by, and explained, by Scott. I found this example very teachable because this anchor tag creates the hyperlink, or link, demonstrating the power of the connectivity of the web with such a simple line of code:<br><br>
-            <img class="linkpower" src="images/attr.jpg" height="50%" width="50%"></p>
+            <img class="linkpower" src="images/attr.jpg"></p>
 
             <b><u>Inline v. block elements v. container elements:</u></b>
 
@@ -48,7 +67,7 @@
         </div>
 
         <div id="stage1">
-            <h2>Lessons from Stage 1: Using HTML to Create a Structured Document</h2>
+            <h2>Concepts, Stage 1: Using HTML to Create a Structured Document</h2>
 
             <b><u>Translating a Visual Design Into a Website:</u></b>
 
@@ -62,7 +81,6 @@
                 <li>Do all the rooms have windows?</li>
 
             <p>And these questions could go on, and on. Just as there are thousands of questions and ways (answers) to style, and thus build, a house, a website can be built the same way, conceptually. <b>Javascript files then</b> are the interactive components of your house, like the garage door opener, dimmer faders on light switches, or the remote to your entertainment center, TV, or stereo system that can <b>change some element of your house</b>.</p>
-
 
             <b><u>Developer Tools:</u></b>
 
@@ -131,12 +149,8 @@
             <p><b>Mozilla Developer Network</b> also has great pages full of wisdom regarding <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS reference</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning">HTML element reference</a>, and how to use <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines#The_HTML5_Outline_Algorithm">HTML sections and outlines</a>.</p>
 
             <p>Lastly, because CSS rules differ sometimes between browsers, there are efforts to promote consistency in styles across browsers. One popular solution to this issue is using what is referred to as a CSS reset such as Normalize.css, a project by Nicholas Gallaher and Jonathan Neal, with their <a href="http://necolas.github.io/normalize.css/">source code</a> available on Github.</p>
-        </div>
 
-        <div id="levelup">
-            <b><u>Concepts for Future Use:</u></b>
-
-            Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. <a href="https://material.io/icons/">Learn more</a> about material design and their process for making these icons in the system icons section of the material design guidelines.
+            <p>Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. <a href="https://material.io/icons/">Learn more</a> about material design and their process for making these icons in the system icons section of the material design guidelines.</p>
 
             <b><u>Exciting Tech News Artciles Re: Tech in Indianapolis:</u></b>
 
@@ -151,5 +165,29 @@
         </div>
     <!--</div> Finish adding notes first before going any further with styling-->
     </div>
+
+    <script src="jquery/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            var menu = "close";
+
+            $('.menu-toggle').click(function() {
+
+
+                if(menu == "close") {
+                    $('.navbar').css('-webkit-transform', 'translate(0, 0)');
+                    $('.container').css('-webkit-transform', 'translate(25%, 0)');
+                    menu = "open";
+                } else {
+                    $('.navbar').css('webkit-transform', 'translate(-100%, 0)');
+                    $('.container').css('-webkit-transform', 'translate(0, 0)');
+                    menu = "close";
+                }
+
+            });
+
+        });
+    </script>
 </body>
 </html>

@@ -9,14 +9,65 @@
     box-sizing: border-box;
 }
 
-/* {font-family: 'Slabo 27px', serif;
+/* {font-family: 'Merienda', cursive;
 }*/
+h1 {
+    padding-top: 10px;
+    padding-bottom: 2px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 35px;
+}
 
-body {
-    background-color: #ed9d68;
+#quote {
+    color: #fff;
+}
+
+h4 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    padding-top: 25px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #003333;
     padding: 4px;
-    border: 2px solid;
-    border-color: #000000;
+
+    -webkit-transition: all 1s ease;
+}
+
+.header {
+    font-family: 'Merienda', cursive;
+    text-align: center;
+    /*====How do I make the ferris wheel my background image?
+    background-image: url("fwheel.jpg");? Hmmm? Figure it out.===
+}*/
+}
+
+.text {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #000000;
+    text-align: center;
+}
+
+.menu-toggle {
+    display: block;
+    color: #99FF99;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.fwheel {
+    width: 100%;
+    height: auto;
+    border-radius: 65px 5px 65px;
+    padding: 3px;
+    background-color: #000000;
 }
 
 .linkpower, .dockbottom, .dockright, .headshot {
@@ -24,6 +75,55 @@ body {
     height: auto;
     border: 2px solid;
     border-color: #000000;
+}
+/* #linebreak {
+    color: #000000;
+    width: 4px;
+} */
+
+/* Nav bar
+======================================= */
+
+.navbar {
+    position: fixed;
+    height: 100%;
+    width: 25%;
+    top: 0px;
+    left: 0px;
+    background-color: #99FF99;
+    overflow: hidden;
+
+    -webkit-transform: translate(-100%, 0);
+
+    -webkit-transition: all 1s ease;
+}
+
+.navbar h2 {
+    padding: 20px 0px;
+    color: #003333;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    border-bottom: 1px solid #398659;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+/*======Add more definitive grid structure?====
+
+
+.img-responsive {
+    width: 100%;
+    height: auto;
+    padding: 5px;
 }
 
 .col-1 {
@@ -72,4 +172,4 @@ body {
 
 .col-12 {
     width: 100%;
-}
+}*/
