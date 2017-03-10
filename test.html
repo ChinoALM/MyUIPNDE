@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Udacity Lessons Reflections</title>
+    <title>UIPND Lessons Reflections</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <!--<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">-->
 </head>
@@ -12,73 +12,77 @@
     <!--<div class="container"> I want to style my webpage now,
     but I should focus on adding all my notes, get all my content
     first, and then style afterwards. Deadline to complete notes: 2pm.-->
+    <div id="container">
+        <div id="header">
+            <h1>Important Concepts</h1></div>
 
-        <h1>Important Concepts</h1>
+        <div id="stage0"
+            <h2>Lessons from Stage 0: The Basics of the Web and HTML</h2>
 
-        <h2>Lessons from Stage 0: The Basics of the Web and HTML</h2>
+            <b><u>The World Wide Web, How it Works, and HTML:</u></b>
 
-        <b><u>The World Wide Web, How it Works, and HTML:</u></b>
+            <p>The Internet was created in the early 1990s, and has some 30 billion webpages at this time; which, if I'm being completely honest, surprised me quite a bit. Components of the web include: a) <b>the user, you and your computer running a web browser</b> such as Chrome (which is what I prefer), Safari, Firefox, and Internet Explorer; b) <b>the Internet</b>; and c) <b>servers</b>; computers that are optimized for hosting files).</p>
 
-        <p>The Internet was created in the early 1990s, and has some 30 billion webpages at this time; which, if I'm being completely honest, surprised me quite a bit. Components of the web include: a) <b>the user, you and your computer running a web browser</b> such as Chrome (which is what I prefer), Safari, Firefox, and Internet Explorer; b) <b>the Internet</b>; and c) <b>servers</b>; computers that are optimized for hosting files).</p>
+            <p>HTML stands for <em>HyperText Markup Language</em> and it is the heart of the web making the web, "weblike." <br><br> Accordingly, HTML is made up of:
+                <li>text content, or <em>what you see</em></li>
+                <li>markup, or <em>what it looks like</em></li>
+                <li>linkes to other pages, or <em>hyperlinks</em></li>
+                <li>references to other documents, such as <em>images, videos, etc.</em></li></p>
 
-        <p>HTML stands for <em>HyperText Markup Language</em> and it is the heart of the web making the web, "weblike." <br><br> Accordingly, HTML is made up of:
-            <li>text content, or <em>what you see</em></li>
-            <li>markup, or <em>what it looks like</em></li>
-            <li>linkes to other pages, or <em>hyperlinks</em></li>
-            <li>references to other documents, such as <em>images, videos, etc.</em></li></p>
+            <p>To troubleshoot issues you may experience with your HTML code, check out this website to <a href="https://validator.w3.org/#validate_by_input">validate your HTML code.</a></p>
 
-        <p>To troubleshoot issues you may experience with your HTML code, check out this website to <a href="https://validator.w3.org/#validate_by_input">validate your HTML code.</a></p>
+            <b><u>Tags and Elements:</u></b>
 
-        <b><u>Tags and Elements:</u></b>
+            <p>Computers interpret language literally, so it makes sense that computer programming languages are designed to limit ambiguity. HTML documents are made up of HTML elements, and tags typically bookmark the content of an element with an opening and closing tag. These tags help computers interpret the HTML you've written with more specificity, giving your webpage more structure, and design. Tags can be used to <b>bold</b>, <em>italicize</em>, or <u>underline</u> words of text, for example. For an HTML Element Reference table in which HTML tags are ordered alphabetically, contain a description, and a note as to if that tag is supported by the current version of HTML, HTML 5, click <a href="https://www.w3schools.com/TAgs/">here</a>.</p>
 
-        <p>Computers interpret language literally, so it makes sense that computer programming languages are designed to limit ambiguity. HTML documents are made up of HTML elements, and tags typically bookmark the content of an element with an opening and closing tag. These tags help computers interpret the HTML you've written with more specificity, giving your webpage more structure, and design. Tags can be used to <b>bold</b>, <em>italicize</em>, or <u>underline</u> words of text, for example. For an HTML Element Reference table in which HTML tags are ordered alphabetically, contain a description, and a note as to if that tag is supported by the current version of HTML, HTML 5, click <a href="https://www.w3schools.com/TAgs/">here</a>.</p>
+            <p>Additonally, some elements accept values called attributes in their opening tags that provide additional information to the browser, such as the anchor tag attribute that was drawn up by, and explained, by Scott. I found this example very teachable because this anchor tag creates the hyperlink, or link, demonstrating the power of the connectivity of the web with such a simple line of code:<br><br>
+            <img class="linkpower" src="images/attr.jpg" height="50%" width="50%"></p>
 
-        <p>Additonally, some elements accept values called attributes in their opening tags that provide additional information to the browser, such as the anchor tag attribute that was drawn up by, and explained, by Scott. I found this example very teachable because this anchor tag creates the hyperlink, or link, demonstrating the power of the connectivity of the web with such a simple line of code:<br><br>
-        <img class="linkpower" src="images/attr.jpg" height="50%" width="50%"></p>
+            <b><u>Inline v. block elements v. container elements:</u></b>
 
-        <b><u>Inline v. block elements v. container elements:</u></b>
+            <p>Inline elements are just text, which code displays in a line in your browser window. There can be several spaces between the text of code, called whitespace, but unless otherwise styled, the text will simply end in its current line, and go to the next, such as when the single line break tag, br, is used. Also, don't forget that images are inline elements. However, unlike inline elements, block elements actually form a box around the text to which heights, and widths can be applied. Examples of block elements include p and div tags.</p>
 
-        <p>Inline elements are just text, which code displays in a line in your browser window. There can be several spaces between the text of code, called whitespace, but unless otherwise styled, the text will simply end in its current line, and go to the next, such as when the single line break tag, br, is used. Also, don't forget that images are inline elements. However, unlike inline elements, block elements actually form a box around the text to which heights, and widths can be applied. Examples of block elements include p and div tags.</p>
+            <p>It follows then, that container elements do nothing but contain stuff inside them. Container elements can be styled <b>inline</b> via the span tag, or <b>block</b> via the div tag, to which complex styling can be applied in CSS. The important thing to remember is to use span tag if you want to add style, inline, to your webpage without affecting the format of your webpage you've created using div tags.</p>
 
-        <p>It follows then, that container elements do nothing but contain stuff inside them. Container elements can be styled <b>inline</b> via the span tag, or <b>block</b> via the div tag, to which complex styling can be applied in CSS. The important thing to remember is to use span tag if you want to add style, inline, to your webpage without affecting the format of your webpage you've created using div tags.</p>
+            <p>Also, re: span and div tags specifically, other tags, such as p, h1, h2, b, u, etc., already have some styling attached to them, as to being the bare bones structures span and divs have to which you can map with styling of your choosing. If you want to further develop great html pages, it's really about divs and how you can layer boxes on top of each other, "like lego blocks"-Instructor Name</p>
+        </div>
 
-        <p>Also, re: span and div tags specifically, other tags, such as p, h1, h2, b, u, etc., already have some styling attached to them, as to being the bare bones structures span and divs have to which you can map with styling of your choosing. If you want to further develop great html pages, it's really about divs and how you can layer boxes on top of each other, "like lego blocks"-Instructor Name</p>
+        <div id="stage1">
+            <h2>Lessons from Stage 1: Using HTML to Create a Structured Document</h2>
 
-        <h2>Lessons from Stage 1: Using HTML to Create a Structured Document</h2>
+            <b><u>Translating a Visual Design Into a Website:</u></b>
 
-        <b><u>Translating a Visual Design Into a Website:</u></b>
+            <p>First, you must build a good conceptual understanding of how websites work. I really liked Jessica's analogy likening the building of a website to a house in that <b>HTML files are the structure</b>, i.e. where walls are placed, and which rooms are your kitchen, dining room, living room, bedroom, etc. <b>CSS files then, are the styles</b> of your house:
+                <li>What color is the carpeting in each room?</li>
+                <li>What color are the walls?</li>
+                <li>What kind of decorations on your wall?</li>
+                <li>Is there space those decorations on the wall?</li>
+                <li>What is the of your ceiling?</li>
+                <li>Are there windows? If so, how many?</li>
+                <li>Do all the rooms have windows?</li>
 
-        <p>First, you must build a good conceptual understanding of how websites work. I really liked Jessica's analogy likening the building of a website to a house in that <b>HTML files are the structure</b>, i.e. where walls are placed, and which rooms are your kitchen, dining room, living room, bedroom, etc. <b>CSS files then, are the styles</b> of your house:
-            <li>What color is the carpeting in each room?</li>
-            <li>What color are the walls?</li>
-            <li>What kind of decorations on your wall?</li>
-            <li>Is there space those decorations on the wall?</li>
-            <li>What is the of your ceiling?</li>
-            <li>Are there windows? If so, how many?</li>
-            <li>Do all the rooms have windows?</li>
-
-        <p>And these questions could go on, and on. Just as there are thousands of questions and ways (answers) to style, and thus build, a house, a website can be built the same way, conceptually. <b>Javascript files then</b> are the interactive components of your house, like the garage door opener, dimmer faders on light switches, or the remote to your entertainment center, TV, or stereo system that can <b>change some element of your house</b>.</p>
+            <p>And these questions could go on, and on. Just as there are thousands of questions and ways (answers) to style, and thus build, a house, a website can be built the same way, conceptually. <b>Javascript files then</b> are the interactive components of your house, like the garage door opener, dimmer faders on light switches, or the remote to your entertainment center, TV, or stereo system that can <b>change some element of your house</b>.</p>
 
 
-        <b><u>Developer Tools:</u></b>
+            <b><u>Developer Tools:</u></b>
 
-        <p>Developer Tools is an incredible tool for designers that shows designers the structure of a webpage, as the browswer interprets it. To use Developer Tools for your webpage, simply open your file in Chrome, right click on your webpage, and select <b>Inspect</b> found at the bottom of the pop-up menu. Once developer tools opened, the dockside was displayed at the bottom of my window:<br><br>
-        <img class="dockbottom" src="images/devtools1.jpg"></p>
+            <p>Developer Tools is an incredible tool for designers that shows designers the structure of a webpage, as the browswer interprets it. To use Developer Tools for your webpage, simply open your file in Chrome, right click on your webpage, and select <b>Inspect</b> found at the bottom of the pop-up menu. Once developer tools opened, the dockside was displayed at the bottom of my window:<br><br>
+            <img class="dockbottom" src="images/devtools1.jpg"></p>
 
-        <p>However, I'd suggest changing your view so that your dock is placed to the right. In the bottom-right corner in the above screenshot, you can see how to change the display location of your dock, resulting in:<br><br><img class="dockright" src="images/devtools2.jpg"></p>
+            <p>However, I'd suggest changing your view so that your dock is placed to the right. In the bottom-right corner in the above screenshot, you can see how to change the display location of your dock, resulting in:<br><br><img class="dockright" src="images/devtools2.jpg"></p>
 
-        </p>Doing so made it easier for me to see my code in the browser (left side), while simultaneously viewing the elements tab, in which your coding tree is displayed (center), along with the styles column (right side).</p>
+            </p>Doing so made it easier for me to see my code in the browser (left side), while simultaneously viewing the elements tab, in which your coding tree is displayed (center), along with the styles column (right side).</p>
 
-        <p>Having the dock on the right also more readily allows you to inspect the margin, border, or padding surrounding elements. You can play around with these numbers in DevTools and immediately see the impact they make on your webpage. You can also add various styling components under element.syle {--insert styling--} to immediately see the impact of say, changing a font color or size, might have on your webpage without making changes to your existing code. But, if you like what changes you see, you can then incorporate that styling into your CSS file.</p>
+            <p>Having the dock on the right also more readily allows you to inspect the margin, border, or padding surrounding elements. You can play around with these numbers in DevTools and immediately see the impact they make on your webpage. You can also add various styling components under element.syle {--insert styling--} to immediately see the impact of say, changing a font color or size, might have on your webpage without making changes to your existing code. But, if you like what changes you see, you can then incorporate that styling into your CSS file.</p>
 
-        <p>Lastly, while in Developer Tools, you can also select the type of media screen you'd like to test your code in, including Galaxy S5, Nexux 5X, Nexus 6P, iPhone 5, iPhone 6, iPhone 6 Plus, iPad, and the iPadPro, as is displayed in the drop down menu in the top-left corner in the above screenshot. Be sure to use this feature when you're designing your own sites!</p>
+            <p>Lastly, while in Developer Tools, you can also select the type of media screen you'd like to test your code in, including Galaxy S5, Nexux 5X, Nexus 6P, iPhone 5, iPhone 6, iPhone 6 Plus, iPad, and the iPadPro, as is displayed in the drop down menu in the top-left corner in the above screenshot. Be sure to use this feature when you're designing your own sites!</p>
 
-        <b><u>Boxes Everywhere, Grids, and Rules:</u></b>
+            <b><u>Boxes Everywhere, Grids, and Rules:</u></b>
 
-        <p>Almost everything on a webpage is built on a grid system using boxes in the shapes of either squares or rectangles, which is an important concept to understand as a Front-End Designer because the quicker you learn this, the easier your life will be. If you feel like you want to be able to control the layout of your webpage(s), think in boxes and ask: how can I put boxes within other boxes to control the layout I want?</p>
+            <p>Almost everything on a webpage is built on a grid system using boxes in the shapes of either squares or rectangles, which is an important concept to understand as a Front-End Designer because the quicker you learn this, the easier your life will be. If you feel like you want to be able to control the layout of your webpage(s), think in boxes and ask: how can I put boxes within other boxes to control the layout I want?</p>
 
-        <b><u>Adding CSS Style and HTML Structure:</b></u>
-        <p>One of the most important rules of computer programming: Don't repeat yourself. Avoiding repetition is essential in all areas of programming. Enter CSS or Cascading Style Sheets, which does imply the use of several CSS files that will be referenced to by HTML, all of which will impact the final, visable style of your webpage. Cascading really means the employment of the most specific rule that can be applied. Jessica described it as: "You keep going down, and down into the rule, until you find the one that best describes the elements."</p>
+            <b><u>Adding CSS Style and HTML Structure:</b></u>
+            <p>One of the most important rules of computer programming: Don't repeat yourself. Avoiding repetition is essential in all areas of programming. Enter CSS or Cascading Style Sheets, which does imply the use of several CSS files that will be referenced to by HTML, all of which will impact the final, visable style of your webpage. Cascading really means the employment of the most specific rule that can be applied. Jessica described it as: "You keep going down, and down into the rule, until you find the one that best describes the elements."</p>
 
         <!--Study the following, and put in your own terms:
         Search and Replace: You You can also think about CSS as a search and replace tool: you identify a class or a tag of the element you want to find (or match, in CSS terminology), and then what you want to do with it, or what property values to replace with different ones.<br>
@@ -112,35 +116,40 @@
 
         Selector: The name that you use to in order to target the elements that are assigned to a class or id attribute in the HTML.-->
 
-        <b><u>Understanding Element ID v. Element Class</u></b>
+            <b><u>Understanding Element ID v. Element Class</u></b>
 
-        <p>Notes from UIPND Stage 0/1 video with Instructors, "instructor 1", and "instructor 2.": What's the purpose of an element id? v. an element class? Whichs situations are better for each respectively? Id's are used to uniquely identify elements in an html document, so that that element is the only one with that specific id, allowing you to directly target it with your styling.</p>
+            <p>Notes from UIPND Stage 0/1 video with Instructors, "instructor 1", and "instructor 2.": What's the purpose of an element id? v. an element class? Whichs situations are better for each respectively? Id's are used to uniquely identify elements in an html document, so that that element is the only one with that specific id, allowing you to directly target it with your styling. An element class then, refers to a group of elements that can be styled together. Class names should not contain periods or any other punctuation marks such as class="1.1"</p>
 
+            <p>ID: ID's are unique identifiers that uniquely identifies an element in HTML. Furthermore, when styling your classes or id's, be mindful of the units of measurement you, i.e. styling a container element to a certain width via the use of px versus the use of % of the page. Setting px will permanently set the size of your container within the browser window, thus </p>
+        </div>
 
-        <p>Notes from UIPND Summary Online:
-        Class: A class refers to a group of elements that can be styled together. Class names should not contain periods or any other punctuation marks such as class="1.1" ID: ID's are unique identifiers that uniquely identifies an element in HTML.</p>
+        <div id="resources">
+            <b><u>Guides and Resources</u></b>
 
+            <p>The best tips and tricks on CSS selectors can be found <a href="https://css-tricks.com/how-css-selectors-work/">here</a>! I'd recommend adding this page to your bookmarks for future reference and study. Furthermore, click <a href="https://css-tricks.com/almanac/">here</a> for <b>an entire Almanac that covers all CSS selectors</b>, as well as their properties.</p>
 
-        <b><u>Guides and Resources</u></b>
+            <p><b>Mozilla Developer Network</b> also has great pages full of wisdom regarding <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS reference</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning">HTML element reference</a>, and how to use <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines#The_HTML5_Outline_Algorithm">HTML sections and outlines</a>.</p>
 
-        <p>The best tips and tricks on CSS selectors can be found <a href="https://css-tricks.com/how-css-selectors-work/">here</a>! I'd recommend adding this page to your bookmarks for future reference and study. Furthermore, click <a href="https://css-tricks.com/almanac/">here</a> for <b>an entire Almanac that covers all CSS selectors</b>, as well as their properties.</p>
+            <p>Lastly, because CSS rules differ sometimes between browsers, there are efforts to promote consistency in styles across browsers. One popular solution to this issue is using what is referred to as a CSS reset such as Normalize.css, a project by Nicholas Gallaher and Jonathan Neal, with their <a href="http://necolas.github.io/normalize.css/">source code</a> available on Github.</p>
+        </div>
 
-        <p><b>Mozilla Developer Network</b> also has great pages full of wisdom regarding <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS reference</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning">HTML element reference</a>, and how to use <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Using_HTML_sections_and_outlines#The_HTML5_Outline_Algorithm">HTML sections and outlines</a>.</p>
+        <div id="levelup">
+            <b><u>Concepts for Future Use:</u></b>
 
-        <p>Lastly, because CSS rules differ sometimes between browsers, there are efforts to promote consistency in styles across browsers. One popular solution to this issue is using what is referred to as a CSS reset such as Normalize.css, a project by Nicholas Gallaher and Jonathan Neal, with their <a href="http://necolas.github.io/normalize.css/">source code</a> available on Github.</p>
+            Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. <a href="https://material.io/icons/">Learn more</a> about material design and their process for making these icons in the system icons section of the material design guidelines.
 
-        <b><u>Concepts for Future Use:</u></b>
+            <b><u>Exciting Tech News Artciles Re: Tech in Indianapolis:</u></b>
 
-        Material icons are beautifully crafted, delightful, and easy to use in your web, Android, and iOS projects. <a href="https://material.io/icons/">Learn more</a> about material design and their process for making these icons in the system icons section of the material design guidelines.
+            <p><a href="http://usbusiness2020.economist.com/article/a-tech-scene-grows-in-indianapolis/">Tech Scene Grows</a>, from <em>The Economist</em>, published December 13, 2016.</p>
+        </div>
 
-        <h2><u>About Me:</u></h2>
-        <img class="headshot" src="images/anthony.jpg">
+        <div id="aboutme">
+            <h2><u>About Me:</u></h2>
+            <img class="headshot" src="images/anthony.jpg">
 
-        <p>I graduated from college almost 6 years ago now with a Bachelor of the Arts, in Theatre. After graduation I worked in regional theatre production, until I left the arts to work full time in the restaurant service industry. After a few years, however, I've realized that waiting tables won't get me where I want to be, thus I've begun my adventure into the field of coding and programming. Udacity was recommened to me by a personal friend, Michael Lucero, who is currently enrolled in your Front-End Nanodegree.</p>
-
-        <b><u>Exciting Tech News Artciles Re: Tech in Indianapolis:</u></b>
-
-        <p><a href="http://usbusiness2020.economist.com/article/a-tech-scene-grows-in-indianapolis/">Tech Scene Grows</a>, from <em>The Economist</em>, published December 13, 2016.</p>
+            <p>I graduated from college almost 6 years ago now with a Bachelor of the Arts, in Theatre. After graduation I worked in regional theatre production, until I left the arts to work full time in the restaurant service industry. After a few years, however, I've realized that waiting tables won't get me where I want to be, thus I've begun my adventure into the field of coding and programming. Udacity was recommened to me by a personal friend, Michael Lucero, who is currently enrolled in your Front-End Nanodegree.</p>
+        </div>
     <!--</div> Finish adding notes first before going any further with styling-->
+    </div>
 </body>
 </html>
